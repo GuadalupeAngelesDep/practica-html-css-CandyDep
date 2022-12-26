@@ -1,0 +1,79 @@
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link_menu {
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+    font-family: Inter;
+}
+@font-face{
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.Titulo {
+    color: hsl(240, 100%, 5%);
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 80px;
+    text-decoration: none;
+
+}
+
+.menu {
+    display: flex;
+    margin: 40px;
+    list-style: none;
+}
+
+.menu-puntos {
+    font-size: 15px;
+    margin: 0 20px;
+    line-height: 30px;
+}
+.link_menu:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.barra{
+    color: hsl(240, 100%, 5%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+@media (max-width: 768px){
+    .Titulo {
+        font-size: 50px;
+        padding: 0 10px;
+    }
+    .menu {
+        flex-direction: column;
+        margin: 10px;
+        background-color: azure;
+        position: fixed;
+        top: 0;
+        width: 40;
+        height: 100%;
+        padding: 100px ;
+    }
+    .menu-puntos {
+        font-size: 15px;
+        margin: 0 1px;
+        line-height: 40px;
+    }
+}
