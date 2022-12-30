@@ -59,6 +59,32 @@ section {
 
 /*Estilos para la seccion de New*/ /*ISMAEL*/
 
+     .conteinerblack{
+
+    background: #0b0b2b;
+    width: 290px;
+    border: 20%;
+    margin-left: 40px;
+}
+.white{
+ color: white;
+
+cursor: pointer;
+
+}
+.pwhite{
+    color: white;
+    opacity: 50%;
+    
+    }
+hr{
+
+width: 90%;
+}
+
+.white:hover{
+    color: goldenrod;
+}
 
 
 /*Estilos para el boton*/
