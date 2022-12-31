@@ -102,7 +102,39 @@ button {
 button:hover {
     background-color: hsl(240, 100%, 5%);
 }
+     
+/*Estilos para el contenedor de imagenes DANIEL*/
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-imagenes h2{
+    font-family: Inter1;
+    font-size: 40px;
+    color: hsl(233, 8%, 79%);
+    letter-spacing: 2px;
+}
+.contenedor-imagenes h3{
+    font-family: Inter1;
+    font-size: 20px;
+    color: hsl(240, 100%, 5%);
 
+}
+.contenedor-imagenes p{
+    font-family: Inter;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+.count-txt_1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.contenedor-imagenes img{
+    width: 200px;
+    height: 200px;
+    align-content: center;
+}
 /*Estilos para la barra en escritorio */
 .nav {
 
