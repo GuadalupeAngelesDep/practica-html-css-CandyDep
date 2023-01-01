@@ -3,13 +3,14 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+}
 
 /*Fuentes para pagina*/
 @font-face {
     font-family: Inter;
-    src: url(/practica/practica-html-css-CandyDep/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
     font-family: Inter1;
-    src: url(/practica/practica-html-css-CandyDep/assets/fonts/static/Inter-ExtraBold.ttf);
+    src: url(/assets/fonts/static/Inter-ExtraBold.ttf);
 }
 
 /*Estilos del conenedor boton e imagen*/
@@ -29,12 +30,16 @@ header {
 section {
     padding-right: 20px;
     display: flex;
-    width: 68%;
+    width: 72%;
+    padding-bottom: 20px;
 }
 
-/*Aqui va la imagen para escritorio con content*/ /*GABRIEL*/
- imagen{
-     conten:url(imagen{})    
+/*Aqui va la imagen para escritorio con content*/
+/*GABRIEL*/
+.imagen {
+    content: url(/assets/images/image-web-3-desktop.jpg);
+}
+
 /*Contenedor para organizar textos*/
 .flex-container-2 {
     display: flex;
@@ -43,8 +48,8 @@ section {
 /*Estilo para el h1*/
 .flex-container-2 h1 {
     font-family: Inter1;
-    font-size: 50px;
-    padding-right: 80px;
+    font-size: 60px;
+    padding-right: 70px;
     width: 100%;
 }
 
@@ -57,33 +62,43 @@ section {
     color: hsl(236, 13%, 42%);
 }
 
-/*Estilos para la seccion de New*/ /*ISMAEL*/
+/*Estilos para la seccion de New*/
+/*ISMAEL*/
 
-     .conteinerblack{
-
+aside{
     background: #0b0b2b;
-    width: 290px;
-    border: 20%;
-    margin-left: 40px;
+    width: 150%;
+    height: 600px;
 }
-.white{
- color: white;
-
-cursor: pointer;
-
+.new{
+    color : hsl(35, 77%, 62%);
+    font-family: Inter;
+    font-size: 40px;
+    padding-left: 15px;
 }
-.pwhite{
+.white {
     color: white;
-    opacity: 50%;
-    
-    }
-hr{
-
-width: 90%;
+    font-family: Inter;
+    font-size: 20px;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
-.white:hover{
-    color: goldenrod;
+.pwhite {
+    color: white;
+    padding-left: 15px;
+    opacity: 50%;
+
+}
+
+hr {
+
+    width: 90%;
+}
+
+.white:hover {
+    color: hsl(35, 77%, 62%);
+    ;
 }
 
 
@@ -102,39 +117,55 @@ button {
 button:hover {
     background-color: hsl(240, 100%, 5%);
 }
-     
+
 /*Estilos para el contenedor de imagenes DANIEL*/
-.contenedor-imagenes{
+.contenedor-imagenes {
     display: flex;
     flex-direction: row;
+    
 }
-.contenedor-imagenes h2{
+.img-1{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.contenedor-imagenes h2 {
     font-family: Inter1;
+    margin-bottom: 0;
     font-size: 40px;
     color: hsl(233, 8%, 79%);
-    letter-spacing: 2px;
 }
-.contenedor-imagenes h3{
+
+.contenedor-imagenes h3 {
     font-family: Inter1;
+    margin-bottom: 0;
     font-size: 20px;
     color: hsl(240, 100%, 5%);
 
 }
-.contenedor-imagenes p{
+.contenedor-imagenes h3:hover {
+    color: hsl(5, 85%, 63%);;
+}
+.contenedor-imagenes p {
     font-family: Inter;
     font-size: 15px;
     color: hsl(236, 13%, 42%);
 }
-.count-txt_1{
+
+.count-txt_1 {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    
 }
-.contenedor-imagenes img{
+
+.contenedor-imagenes img {
     width: 200px;
     height: 200px;
-    align-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
 }
+
 /*Estilos para la barra en escritorio */
 .nav {
 
@@ -207,7 +238,9 @@ button:hover {
 /*AQUI EMPIEZA PARA MOVILES*/
 /*Estilos a para moviles */
 @media (max-width:768px) {
-    /*Estilos para la barra para moviles */ /*GUADALUPE*/
+
+    /*Estilos para la barra para moviles */
+    /*GUADALUPE*/
     .nav {
         --state-men: scale(1);
     }
@@ -284,19 +317,21 @@ button:hover {
         display: block;
     }
 
-    /*Cambio de imagen */ /*GABRIEL*/
+    /*Cambio de imagen */
+    /*GABRIEL*/
     .imagen {
-        content: url(/practica/practica-html-css-CandyDep/assets/images/image-web-3-mobile.jpg);
+        content: url(/assets/images/image-web-3-mobile.jpg);
     }
 
     /*Contenedor principal*/
-    .contenedor-principal{
+    .contenedor-principal {
         display: flex;
         flex-direction: column;
     }
-    section{
+
+    section {
         width: 100%;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     /*Contenedor para organizar textos*/
@@ -306,19 +341,56 @@ button:hover {
 
     /*Estilos para los textos*/
     .flex-container-2 h1 {
+        font-size: 40px;
         padding-right: 0px;
         margin-top: 0px;
+        margin-bottom: 0;
     }
+
     .flex-container-2 p {
         padding-right: 0px;
         margin-top: 0px;
     }
 
-    /*Estilos para la seccion de New*/ /*ISMAEL*/
-   
+    /*Estilos para la seccion de New*/
+    /*ISMAEL*/
+    aside{
+        width: 100%;
+    }
 
     /*Estilos para el boton*/
     button {
         width: 170px;
+    }
+    .contenedor-imagenes {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .count-txt_1 {
+        width: 80%;
+    }
+    .contenedor-imagenes h2 {
+        font-size: 150%;
+        margin-bottom: 0;
+    }
+    
+    .contenedor-imagenes h3 {
+        font-size: 90%;
+        margin-bottom: 0;
+    }
+
+    .contenedor-imagenes p {
+        font-size: 80%;
+        color: hsl(236, 13%, 42%);
+    }
+    .contenedor-imagenes img {
+        padding-right: 20px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .img-1{
+        display: flex;
+        flex-direction: row;
     }
 }
